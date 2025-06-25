@@ -1,15 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to JKBODY</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bald verfügbar</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to JKBODY</h1>
-    <p>This is the official website for JKBODY. This site is in development.</p>
-    <p>To contact us, please use <a href="https://github.com">GitHub</a>.</p>
+  <header>
+    <div class="navbar">
+      <span class="logo">Meine Seite</span>
+      <button id="darkmode-toggle" aria-label="Darkmode umschalten">🌙</button>
+    </div>
+  </header>
+  <main>
+    <h1>Willkommen!</h1>
+    <h2>Hier entsteht etwas Neues</h2>
+    <p>In Zukunft findest du hier Inhalte.</p>
+  </main>
+  <script>
+    // Darkmode Toggle Script
+    const toggle = document.getElementById('darkmode-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('darkmode');
+    });
+  </script>
 </body>
 </html>
