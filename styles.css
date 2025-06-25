@@ -1,24 +1,80 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 50px;
-    background-color: #f2f2f2;
-    color: #333;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#darkmode-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+main {
+  max-width: 600px;
+  margin: 4rem auto 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 2.5rem 2rem;
+  text-align: center;
 }
 
 h1 {
-    font-size: 50px;
+  margin-top: 0;
+  font-size: 2.5rem;
+  color: #333;
 }
 
-p {
-    font-size: 20px;
+h2 {
+  color: #666;
+  margin-bottom: 1.5rem;
 }
 
-a {
-    color: #007BFF;
-    text-decoration: none;
+.darkmode {
+  background: #181a1b;
+  color: #e0e0e0;
 }
 
-a:hover {
-    text-decoration: underline;
+.darkmode header .navbar {
+  background: #181a1b;
+  color: #e0e0e0;
+}
+
+.darkmode main {
+  background: #232526;
+  color: #e0e0e0;
+}
+
+.darkmode h1 {
+  color: #fff;
+}
+
+.darkmode h2 {
+  color: #b0b0b0;
+}
+
+.darkmode #darkmode-toggle {
+  color: #ffd700;
 }
